@@ -9,7 +9,6 @@ export default function ProfileContainer() {
 
     const [data, setData] = useState([]);
     useEffect(() => {
-        //============ API call
         async function apiCall() {
             try {
               const response = await axios.get('https://reqres.in/api/users?page=1');
